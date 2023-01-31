@@ -94,4 +94,13 @@ $dosen = DosenModel::all();
      {
         
      }
+    //  git status
+    //  git init
+    // git add .
+    // git commit -m "first commit"
+    // git remote add origin https://github.com/siroputri/landing-magang.git
+    // git push
+    // git add app/Http/Controllers/Dosen.php
+    // git commit -m "new message"
+    // git push
 }
