@@ -90,4 +90,8 @@ $dosen = DosenModel::all();
 
          return redirect('/dosen');
      }
+     public function message (Request $request)
+     {
+        
+     }
 }
