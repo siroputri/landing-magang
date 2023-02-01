@@ -418,13 +418,13 @@
                     <h6 class="section-title mb-4">Get In Touch</h6>
                     <form>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <input type="nama" class="form-control" id="exampleInputNama1" aria-describedby="Nama" placeholder="Nama" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Pesan"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
                     </form>
