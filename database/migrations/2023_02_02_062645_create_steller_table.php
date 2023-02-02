@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('steller', function (Blueprint $table) {
             $table->id();
+            $table->string('nama',100);
+            $table->string('email',30);
+            $table->string('pesan',2000);
             $table->timestamps();
         });
     }
