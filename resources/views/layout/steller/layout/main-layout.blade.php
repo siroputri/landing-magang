@@ -433,7 +433,7 @@
                     <div class="item">
                         <i class="ti-layout-list-thumb-alt"></i>
                         <div class="">
-                            <h5>Comment</h5>
+                            <a href="{{ route('comment')}}"> <h5>Comment</h5></a>
                             <!-- <p> 12345 Fake ST NoWhere AB Country</p> -->
                         </div>                          
                     </div>
