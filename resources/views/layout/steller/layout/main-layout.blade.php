@@ -431,13 +431,13 @@
                 </div>
                 <div class="contact-infos">
                     <div class="item">
-                        <i class="ti-location-pin"></i>
+                        <i class="ti-layout-list-thumb-alt"></i>
                         <div class="">
-                            <h5>Location</h5>
-                            <p> 12345 Fake ST NoWhere AB Country</p>
+                            <h5>Comment</h5>
+                            <!-- <p> 12345 Fake ST NoWhere AB Country</p> -->
                         </div>                          
                     </div>
-                    <div class="item">
+                    <!-- <div class="item">
                         <i class="ti-mobile"></i>
                         <div>
                             <h5>Phone Number</h5>
@@ -448,7 +448,7 @@
                         <i class="ti-email"></i>
                         <div class="mb-0">
                             <h5>Email Address</h5>
-                            <p>info@website.com</p>
+                            <p>info@website.com</p> -->
                         </div>
                     </div>
                 </div>                  
