@@ -56,7 +56,7 @@ class Mahasiswa extends Controller
     }
     public function postEdit($id, Request $request)
     {
-        // load mdodel data
+        // load model data
         $mahasiswa = MahasiswaModel::find($id);
         // assign model properties
         $mahasiswa->nama = $request->nama;
