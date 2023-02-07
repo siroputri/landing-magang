@@ -29,7 +29,7 @@
                         <th>NIM</th>
                         <th>Angkatan</th>
                         <th>Domisili</th>
-                        <th">Aksi</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
