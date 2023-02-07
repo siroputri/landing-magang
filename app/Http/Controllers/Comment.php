@@ -27,7 +27,7 @@ class Comment extends Controller
         ];
         CommentModel::create($commentBaru);
 
-        return redirect('/');
+        return redirect('/comment');
     }
 
     public function delete($id)
