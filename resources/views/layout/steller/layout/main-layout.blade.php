@@ -416,28 +416,29 @@
                 <div class="form">
                     <h6 class="subtitle">Available 24/7</h6>
                     <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
+                    <form action="/comment" method="POST">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <input type="nama" class="form-control" id="nama" name="nama" aria-describedby="Nama" placeholder="Nama" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                            <textarea id="pesan" name="pesan" cols="30" rows="5" class="form-control" placeholder="Pesan"></textarea>
                         </div>
+                        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
                         <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
                     </form>
                 </div>
                 <div class="contact-infos">
                     <div class="item">
-                        <i class="ti-location-pin"></i>
+                        <i class="ti-layout-list-thumb-alt"></i>
                         <div class="">
-                            <h5>Location</h5>
-                            <p> 12345 Fake ST NoWhere AB Country</p>
+                            <a href="{{('comment')}}"> <h5>Comment</h5></a>
+                            <!-- <p> 12345 Fake ST NoWhere AB Country</p> -->
                         </div>                          
                     </div>
-                    <div class="item">
+                    <!-- <div class="item">
                         <i class="ti-mobile"></i>
                         <div>
                             <h5>Phone Number</h5>
@@ -448,7 +449,7 @@
                         <i class="ti-email"></i>
                         <div class="mb-0">
                             <h5>Email Address</h5>
-                            <p>info@website.com</p>
+                            <p>info@website.com</p> -->
                         </div>
                     </div>
                 </div>                  
