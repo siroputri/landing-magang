@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
+@extends('layout.layout')
 
-<head>
-    <title>Pesan</title>
-</head>
+@section('title', 'homepage')
 
-<body>
+@section('content')
     <div>
             <h1> Tabel Pesan </h1>
     </div>    
-            <table class="thead-light">
-                <thead>
+            <table class="table">
+                <thead class="thead-dark">
                     <tr>
                         <th>Nama</th>
                         <th>Email</th>
@@ -19,16 +16,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($comment as $row) : ?>
+                    <?php foreach ($comment as $row) :?>
                         <tr>
                             <td><?= $row['nama'] ?></td>
                             <td><?= $row['email'] ?></td>
                             <td><?= $row['pesan'] ?></td>
                             <td><?= $row['aksi'] ?></td>
                             <td>
-                                <form action="/comment/delete/<?= $row['id'] ?>" method="POST">
+                            <button type="submit" class="btn btn-secondary">Delete</button>
+                                <form action="/comment/delete/ <?= $row['id'] ?>" method="POST">
                             <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
-                                <button type="submit">Delete</button>
                             </form>
                         </td>
                     </tr>
@@ -36,4 +33,4 @@
                 </tbody>
             </table>
             <body>
-                <html>
+                @endsection
