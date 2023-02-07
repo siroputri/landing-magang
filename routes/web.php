@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Mahasiswa;
 // use App\Http\Controllers\Dosen;
-// use App\Http\Controllers\Steller;
+use App\Http\Controllers\Comment;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +35,6 @@ Route::post('/dosen/edit/{id}', [Dosen::class, 'postEdit']);
 Route::post('/dosen/delete/{id}', [Dosen::class, 'delete']);
 
 Route::get('/', [Mahasiswa::class, 'homepage']);
+Route::get('/comment', [Comment::class, 'index']);
+Route::post('/comment', [Comment::class, 'post']);
+Route::post('/comment/delete/{id}', [Comment::class, 'delete']);
