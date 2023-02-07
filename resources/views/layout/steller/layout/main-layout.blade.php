@@ -416,16 +416,17 @@
                 <div class="form">
                     <h6 class="subtitle">Available 24/7</h6>
                     <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
+                    <form action="/comment" method="POST">
                         <div class="form-group">
-                            <input type="nama" class="form-control" id="exampleInputNama1" aria-describedby="Nama" placeholder="Nama" required>
+                            <input type="nama" class="form-control" id="nama" name="nama" aria-describedby="Nama" placeholder="Nama" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Pesan"></textarea>
+                            <textarea id="pesan" name="pesan" cols="30" rows="5" class="form-control" placeholder="Pesan"></textarea>
                         </div>
+                        <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
                         <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
                     </form>
                 </div>
@@ -433,7 +434,7 @@
                     <div class="item">
                         <i class="ti-layout-list-thumb-alt"></i>
                         <div class="">
-                            <a href="{{ route('comment')}}"> <h5>Comment</h5></a>
+                            <a href="{{('comment')}}"> <h5>Comment</h5></a>
                             <!-- <p> 12345 Fake ST NoWhere AB Country</p> -->
                         </div>                          
                     </div>
