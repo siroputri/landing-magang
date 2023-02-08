@@ -23,8 +23,8 @@
                 <td><?= $row['pesan'] ?></td>
                 <td><?= $row['aksi'] ?></td>
                 <td>
-                    <button type="submit" class="btn btn-danger">Delete</button>
                     <form action="/comment/delete/ <?= $row['id'] ?>" method="POST">
+                    <button type="submit" class="btn btn-danger">Delete</button>
                         <input type="hidden" name="_token" value="<?= csrf_token() ?>" />
                     </form>
                 </td>
