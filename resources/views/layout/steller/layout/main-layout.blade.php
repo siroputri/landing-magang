@@ -410,7 +410,7 @@
         <div class="container text-center">
             <h6 class="subtitle">Contact</h6>
             <h6 class="section-title mb-4">Get In Touch With Me</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+            <p class="mb-5 pb-4">Silakan isi formulir di bawah ini<br> untuk menghubungi kami lebih lanjut</p>
 
             <div class="contact text-left">
                 <div class="form">
