@@ -15,7 +15,7 @@ class Comment extends Controller
             'comment' => $comment
         ];
 
-         return view('layout.steller.layout.comment', $data);
+        return view('layout.steller.layout.comment', $data);
     }
 
     public function post(Request $request)
@@ -27,7 +27,7 @@ class Comment extends Controller
         ];
         CommentModel::create($commentBaru);
 
-        return redirect('/');
+        return redirect('/comment');
     }
 
     public function delete($id)
