@@ -74,11 +74,11 @@ class Mahasiswa extends Controller
         $mahasiswa = MahasiswaModel::find($id);
 
         if ($mahasiswa === NULL) {
-            return redirect('/dosen');
+            return redirect('/mahasiswa');
         }
         $mahasiswa->delete();
 
-        return redirect('/dosen');
+        return redirect('/mahasiswa');
     }
     public function homepage()
     {
