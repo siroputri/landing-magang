@@ -46,7 +46,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="- btn btn-primary rounded ml-4" href="/login">Login</a>
+                        <a class="- btn btn-primary rounded ml-4" href="/logout">Logout</a>
                     </li>
                 </ul>
             </div>
