@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Mahasiswa;
 // use App\Http\Controllers\Dosen;
 use App\Http\Controllers\Comment;
+use App\Http\Controllers\Author;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +35,18 @@ Route::get('/dosen/edit/{id}', [Dosen::class, 'edit']);
 Route::post('/dosen/edit/{id}', [Dosen::class, 'postEdit']);
 Route::post('/dosen/delete/{id}', [Dosen::class, 'delete']);
 
+// prefix (untuk grup route)
+// line 40-42 masukin route
+Route::prefix('comment')->group(function () {
+    Route::get('/', [Comment::class, 'index']);
+Route::post('/', [Comment::class, 'post']);
+Route::post('/delete/{id}', [Comment::class, 'delete']);
+});
+
 Route::get('/', [Mahasiswa::class, 'homepage']);
-Route::get('/comment', [Comment::class, 'index']);
-Route::post('/comment', [Comment::class, 'post']);
-Route::post('/comment/delete/{id}', [Comment::class, 'delete']);
+// Only authenticated users may access this route...
+// penyimpanan data server di session (cookies)
+// middleware = jembatan
+// Route::get('/login', function () {})->middleware('auth.basic');
+Route::get('/login', [Author::class, 'index']);
+Route::post('/register', [Author::class, 'register']);
